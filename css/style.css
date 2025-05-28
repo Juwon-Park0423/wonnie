@@ -1,0 +1,231 @@
+/* ========== Base Reset ========== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff8f2;
+  display: flex;
+}
+
+/* ========== Layout ========== */
+.hero-bg {
+  background-color: #cec4fa;
+  height: 90vh;
+  position: relative;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px;
+  position: relative;
+  margin-left: 96px;
+  margin-right: 96px;
+}
+
+header a {
+  color: #444752;
+  font-family: Formiga;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.contact-button {
+  border-radius: 13.326px;
+  border: 3px solid #444752;
+  background: #ff96af;
+  box-shadow: 5px 5px 0px 0px #444752;
+  display: flex;
+  height: 44px;
+  padding: 11px 21px;
+  justify-content: center;
+  align-items: center;
+  color: #444752;
+  font-family: Formiga;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+  margin-top: 18%;
+}
+
+main img {
+  width: 570px;
+}
+/* ========== Button ========== */
+.contact-button:active {
+  background-color: #e36f8d; /* 눌렀을 때 색 */
+  box-shadow: 2px 2px 0px 0px #444752;
+  transform: translateY(2px); /* 눌린 듯한 느낌 */
+}
+
+.contact-button:hover {
+  background-color: #ffa4bb; /* 살짝 더 진한 핑크 */
+}
+
+.contact-button:focus {
+  outline: 2px solid #444752;
+  outline-offset: 3px;
+}
+
+/* ========== Scallop ========== */
+.scallop-row {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.scallop {
+  width: 160px;
+  height: 160px;
+  background-color: #cec4fa;
+  border-radius: 0 0 160px 160px;
+  flex-shrink: 0;
+}
+
+/* ========== Mobile Menu ========== */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1000;
+  position: relative;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff8f2;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.mobile-menu.show {
+  transform: translateX(0);
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: auto;
+  box-sizing: none;
+  margin-top: 24px;
+}
+
+.mobile-menu-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.mobile-menu .contact-button {
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* ========== Media Queries ========== */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .nav-links,
+  header > .contact-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-bg {
+    height: 90vh;
+  }
+
+  .scallop-row {
+    bottom: -40px;
+  }
+
+  .scallop {
+    width: 80px;
+    height: 80px;
+    border-radius: 0 0 80px 80px;
+  }
+
+  .icon {
+    width: 23px;
+    height: 23px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+    margin-top: 60%;
+  }
+
+  main img {
+    width: 284px;
+  }
+
+  header {
+    padding: 32px 16px 60px 16px;
+    margin: 0;
+    a {
+      margin: 0;
+      img {
+        width: 28px;
+      }
+    }
+  }
+
+  body.menu-open .hamburger {
+    display: none;
+  }
+}
