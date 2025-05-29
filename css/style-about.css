@@ -17,40 +17,9 @@ body {
   z-index: 0;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 32px 24px;
-  position: relative;
-  margin-left: 96px;
-  margin-right: 96px;
-}
-
-header a {
-  color: #444752;
-  font-family: Formiga;
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
 .contact-button {
-  border-radius: 13.326px;
-  border: 3px solid #444752;
   background: #ff96af;
-  box-shadow: 5px 5px 0px 0px #444752;
-  display: flex;
-  height: 44px;
-  padding: 11px 21px;
-  justify-content: center;
-  align-items: center;
   color: #444752;
-  font-family: Formiga;
-  font-size: 20px;
-  font-weight: 700;
 }
 
 main {
@@ -65,91 +34,10 @@ main img {
 /* ========== Button ========== */
 .contact-button:active {
   background-color: #e36f8d; /* 눌렀을 때 색 */
-  box-shadow: 2px 2px 0px 0px #444752;
-  transform: translateY(2px); /* 눌린 듯한 느낌 */
 }
 
 .contact-button:hover {
   background-color: #ffa4bb; /* 살짝 더 진한 핑크 */
-}
-
-.contact-button:focus {
-  outline: 2px solid #444752;
-  outline-offset: 3px;
-}
-
-/* ========== Scallop ========== */
-.scallop-row {
-  position: absolute;
-  bottom: -80px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.scallop {
-  width: 160px;
-  height: 160px;
-  background-color: #cec4fa;
-  border-radius: 0 0 160px 160px;
-  flex-shrink: 0;
-}
-
-/* ========== Mobile Menu ========== */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  margin-left: auto;
-  z-index: 1000;
-  position: relative;
-}
-
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff8f2;
-  transform: translateX(100%);
-  transition: transform 0.4s ease-in-out;
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-}
-
-.mobile-menu.show {
-  transform: translateX(0);
-}
-
-.close-button {
-  background: none;
-  border: none;
-  font-size: 32px;
-  cursor: pointer;
-  align-self: flex-end;
-  margin-bottom: auto;
-  box-sizing: none;
-  margin-top: 24px;
-}
-
-.mobile-menu-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
-.mobile-menu .contact-button {
-  margin-top: 16px;
-  text-align: center;
 }
 
 .intro {
