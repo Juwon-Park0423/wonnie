@@ -17,6 +17,10 @@ body {
   z-index: 0;
 }
 
+.scallop {
+  background-color: #cec4fa;
+}
+
 .contact-button {
   background: #ff96af;
   color: #444752;
@@ -86,7 +90,6 @@ main img {
 @media (max-width: 768px) {
   body {
     font-size: 16px;
-    padding: 40px;
   }
 
   .icon {
@@ -138,7 +141,7 @@ main img {
   main {
     align-items: center;
     text-align: center;
-    margin-top: 60%;
+    margin-top: 50%;
   }
 
   main img {

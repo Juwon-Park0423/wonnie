@@ -3,95 +3,217 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>work-list</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <title>Works</title>
     <link rel="stylesheet" href="css/style-work.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/style-nav.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dds1puu.css" />
+    <script src="js/script.js"></script>
   </head>
+
   <body>
-    <div class="slider-wrapper">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="img/Savespot.png" alt="" />
-            <div class="overlay">
-              <h3>Save Spot</h3>
-              <p>
-                An easy way for Auckland students to look out for each other by
-                sharing nearby incidents on a map.
-              </p>
-              <a href="#">View</a>
-            </div>
+    <div class="hero-bg">
+      <div class="scallop-row">
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+      </div>
+      <header>
+        <a href="index.html"><img src="img/woonieicon.svg" alt="" /></a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="works.html">Work</a>
+        </nav>
+        <button class="contact-button" onclick="location.href='contact.html'">
+          Contact Me!
+        </button>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <!-- Mobile Menu (여기서 버튼도 포함) -->
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close-button" onclick="toggleMenu()">✕</button>
+          <div class="mobile-menu-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="works.html">Work</a>
+            <button
+              class="contact-button"
+              onclick="location.href='contact.html'"
+            >
+              Contact Me!
+            </button>
           </div>
-          <div class="swiper-slide">
-            <img src="img/Rectangle 4264.png" alt="" />
-            <div class="overlay">
-              <h3>Snacky</h3>
-              <p>
-                An easy way for Auckland students to look out for each other by
-                sharing nearby incidents on a map.
-              </p>
-              <a href="#">View</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="img/Rectangle 4264.png" alt="" />
-            <div class="overlay">
-              <h3>Hooky Wooly</h3>
-              <p>
-                An easy way for Auckland students to look out for each other by
-                sharing nearby incidents on a map.
-              </p>
-              <a href="#">View</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="img/Rectangle 4264.png" alt="" />
-            <div class="overlay">
-              <h3>Healeon</h3>
-              <p>
-                An easy way for Auckland students to look out for each other by
-                sharing nearby incidents on a map.
-              </p>
-              <a href="#">View</a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="img/Rectangle 4264.png" alt="" />
-            <div class="overlay">
-              <h3>Midnight Guardian</h3>
-              <p>
-                An easy way for Auckland students to look out for each other by
-                sharing nearby incidents on a map.
-              </p>
-              <a href="#">View</a>
-            </div>
+        </div>
+      </header>
+    </div>
+
+    <section class="first-section">
+      <div class="work-card-1">
+        <img src="img/savespot-work-title.png" alt="" />
+        <div class="card-info">
+          <h5>2024</h5>
+          <h2>Save Spot</h2>
+          <p>
+            Save Spot is a community-based safety app designed to help students
+            in Auckland’s city center share safety information and protect one
+            another, in response to the area’s rising crime rates.
+          </p>
+          <div class="card-button">
+            <a href="savespot.html">Learn More</a><br /><a
+              href="savespot-process.html"
+              >Design Process</a
+            >
           </div>
         </div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="custom-pagination swiper-pagination"></div>
-    </div>
-
-    <div class="nav">
-      <button class="nav-btn" onclick="location.href='index.html'">Home</button>
-      <button class="nav-btn" onclick="location.href='about.html'">
-        About
-      </button>
-      <button class="nav-btn active" onclick="location.href='works.html'">
-        Work
-      </button>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    </section>
+    <section>
+      <div class="work-card-2">
+        <div class="mobile-image">
+          <img src="img/snacky-work-title.png" alt="" />
+        </div>
+        <div class="card-info">
+          <h5>2024</h5>
+          <h2>Snacky</h2>
+          <p>
+            Save Spot is a community-based safety app designed to help students
+            in Auckland’s city center share safety information and protect one
+            another, in response to the area’s rising crime rates.
+          </p>
+          <div class="card-button">
+            <a href="snacky.html">Learn More</a><br /><a
+              href="savespot-process.html"
+              >Design Process</a
+            >
+          </div>
+        </div>
+        <div class="pc-image">
+          <img src="img/snacky-work-title.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="work-card-1">
+        <img src="img/hookywooly-work-title.png" alt="" />
+        <div class="card-info">
+          <h5>2024</h5>
+          <h2>Hooky Wooly</h2>
+          <p>
+            Save Spot is a community-based safety app designed to help students
+            in Auckland’s city center share safety information and protect one
+            another, in response to the area’s rising crime rates.
+          </p>
+          <div class="card-button">
+            <a href="hookywooly.html">Learn More</a><br /><a
+              href="savespot-process.html"
+              >Design Process</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="work-card-2">
+        <div class="mobile-image">
+          <img src="img/healeon-work-title.png" alt="" />
+        </div>
+        <div class="card-info">
+          <h5>2025</h5>
+          <h2>Healeon</h2>
+          <p>
+            Save Spot is a community-based safety app designed to help students
+            in Auckland’s city center share safety information and protect one
+            another, in response to the area’s rising crime rates.
+          </p>
+          <div class="card-button">
+            <a href="healeon.html">Learn More</a><br /><a
+              href="savespot-process.html"
+              >Design Process</a
+            >
+          </div>
+        </div>
+        <div class="pc-image">
+          <img src="img/healeon-work-title.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="work-card-1">
+        <img src="img/oddyssey-work-title.png" alt="" />
+        <div class="card-info">
+          <h5>2025</h5>
+          <h2>Oddyssey</h2>
+          <p>
+            Save Spot is a community-based safety app designed to help students
+            in Auckland’s city center share safety information and protect one
+            another, in response to the area’s rising crime rates.
+          </p>
+          <div class="card-button">
+            <a href="oddyssey.html">Learn More</a><br /><a
+              href="savespot-process.html"
+              >Design Process</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <footer>
+    <div class="contact-section">
+      <h1>Contact Me</h1>
+
+      <div class="contact-main">
+        <div class="contact-info">
+          <div class="footer-item">
+            <img src="img/distance.svg" alt="location" />
+            <span> <p>Auckland, New Zealand</p></span>
+          </div>
+          <div class="footer-item">
+            <img src="img/call.svg" alt="phone" />
+            <span
+              ><a href="tel:+6421203220"><p>+64 021 203 2207</p></a></span
+            >
+          </div>
+          <div class="footer-item">
+            <img src="img/mail.svg" alt="email" />
+            <span
+              ><a href="mailto:joowonpark0423@gmail.com"
+                ><p>joowonpark0423@gmail.com</p></a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div class="social-media">
+          <a href="https://www.instagram.com/joo_oneee/"
+            ><img src="img/instagram.svg" alt="instagram"
+          /></a>
+          <a href="https://www.facebook.com/profile.php?id=100008294239112"
+            ><img src="img/facebook.svg" alt="facebook"
+          /></a>
+          <a href="https://www.linkedin.com/in/juwon-park-385680276/"
+            ><img src="img/linkedin.svg" alt="linkedin"
+          /></a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="copyright">©Juwon Park</div>
+    </div>
+  </footer>
 </html>

@@ -17,6 +17,10 @@ body {
   width: 100vw;
 }
 
+.scallop {
+  background-color: #cec4fa;
+}
+
 .contact-button {
   background: #ff96af;
   color: #444752;

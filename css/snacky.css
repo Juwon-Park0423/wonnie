@@ -9,7 +9,7 @@ body {
 
 /* ========== Layout ========== */
 .hero-bg {
-  background-color: #00c875;
+  background-color: #ffa96c;
   height: 144px;
   position: relative;
   width: 100vw;
@@ -17,14 +17,14 @@ body {
 }
 
 .contact-button {
-  background: #ffffff;
+  background: #ffe66d;
   color: #444752;
 }
 
 .scallop {
   width: 160px;
   height: 160px;
-  background-color: #00c875;
+  background-color: #ffa96c;
   border-radius: 0 0 160px 160px;
   flex-shrink: 0;
 }
@@ -40,11 +40,11 @@ main img {
 }
 /* ========== Button ========== */
 .contact-button:active {
-  background-color: #adadad; /* 눌렀을 때 색 */
+  background-color: #e2bf0f;
 }
 
 .contact-button:hover {
-  background-color: #adadad; /* 눌렀을 때 색 */
+  background-color: #e2bf0f;
 }
 
 /* ========== Media Queries ========== */
