@@ -46,6 +46,265 @@ main img {
 .contact-button:hover {
   background-color: #adadad; /* 눌렀을 때 색 */
 }
+section {
+  margin: 0 96px;
+}
+.first-section {
+  display: flex;
+  flex-wrap: wrap; /* ✅ 모바일 대응 */
+  align-items: stretch; /* ✅ 높이 동일하게 */
+  max-width: 1090px;
+  margin: 200px auto 120px;
+}
+
+.first-section-1,
+.first-section-2 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.first-section-2 img {
+  width: 100%;
+  height: 100%;
+  max-width: 528px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-left: 32px;
+}
+
+.first-section h1 {
+  margin-top: 0;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 12px 0 24px;
+}
+
+.tag-row span {
+  border-radius: 20px;
+  border: 1px solid #00c875;
+  padding: 7px 12px;
+  color: #444752;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.tag-row span:hover {
+  background-color: #00c875; /* ✅ hover 시 배경색 */
+  color: white; /* ✅ 텍스트 색상 반전 (가독성 좋게) */
+  cursor: default; /* optional: pointer 대신 default */
+}
+
+.overview {
+  display: flex;
+  justify-content: center;
+  background: #f1d8e5;
+  margin: 0;
+  padding: 41px 96px;
+  align-self: stretch;
+}
+
+.overview-wrapper {
+  display: flex;
+}
+
+.overview-0 {
+  max-width: 1090px;
+  align-items: center;
+}
+
+.overview-1 {
+  color: #444752;
+  font-family: Formiga;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+}
+
+.overview-2 h6 {
+  margin-top: 0;
+}
+/* 전체 섹션 */
+.problem {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 64px 96px;
+  align-self: stretch;
+}
+
+/* 기존 유지: 세로 정렬 카드 묶음 */
+.problem-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+
+/* 첫 번째 줄: 지도 + 문제 텍스트 */
+.problem-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* 지도 */
+.map img {
+  max-width: 528px;
+  border-radius: 20px;
+}
+
+/* 문제 텍스트 */
+.problem-text {
+  margin-top: 30px;
+  background-image: url(../img/note.png);
+  background-size: 300%;
+  background-color: #fffafa;
+  max-width: 435px;
+  padding: 55px 35px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+.problem-text h3 {
+  margin-top: 0;
+}
+
+.problem-text p {
+  margin-bottom: 0;
+}
+
+/* 스티커 공통 */
+.sticker {
+  position: absolute;
+  z-index: 2;
+}
+
+.sticker-x {
+  top: -21px;
+  right: 20px;
+  width: 52px;
+  transform: rotate(0deg);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.sticker-x.visible {
+  transform: rotate(-30deg);
+  opacity: 1;
+}
+
+.sticker-warning {
+  top: -12px;
+  right: -32px;
+  width: 69px;
+  transform: rotate(0deg);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.sticker-warning.visible {
+  transform: rotate(30deg);
+  opacity: 1;
+}
+
+/* 두 번째 줄: 타겟 + 인물 */
+.problem-2 {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.problem-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  flex-wrap: nowrap; /* ✅ 줄바꿈 안되게 */
+}
+
+.target-text {
+  margin-top: 30px;
+  background-image: url(../img/note.png);
+  background-size: 300%;
+  background-color: #fffafa;
+  max-width: 435px;
+  padding: 55px 35px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.sticker-guardy {
+  top: -60px;
+  right: -42px;
+  width: 113px;
+  transform: rotate(0deg);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.sticker-guardy.visible {
+  transform: rotate(10deg);
+  opacity: 1;
+}
+
+.target-text h3 {
+  margin-top: 0;
+}
+
+.people {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.person {
+  text-align: center;
+}
+
+.person img {
+  width: 120px;
+  border-radius: 50%;
+}
+.problem-text h3 {
+  margin-top: 0;
+}
+
+.problem-text p {
+  margin-bottom: 0;
+}
+
+.savespot-home {
+  width: 100%;
+  height: 508px; /* ✅ 고정! */
+  overflow: hidden;
+  position: relative;
+}
+
+.savespot-home img {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: cover;
+  min-width: 100%;
+}
 
 /* ========== Media Queries ========== */
 @media (max-width: 768px) {

@@ -96,7 +96,7 @@ section {
 .work-card-1,
 .work-card-2 {
   background-color: #fffafa; /* 투명한 흰색 레이어 */
-  max-width: 1160px;
+  max-width: 1088px;
   display: flex;
   border-radius: 20px;
   background-image: url(../img/note.png);
@@ -134,35 +134,16 @@ section {
   align-items: stretch;
 }
 
-/* typography */
 h2 {
-  color: #444752;
-  font-family: Formiga;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   margin-bottom: 18px;
   margin-top: 18px;
 }
 
 h5 {
-  color: #444752;
-  font-family: Poppins;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 22.5px */
   margin-bottom: 18px;
 }
 
 p {
-  color: #444752;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
   margin-bottom: 18px;
   margin-top: 18px;
 }
@@ -213,10 +194,6 @@ p {
     width: 23px;
     height: 23px;
     margin: 0;
-  }
-
-  h1 {
-    font-size: 20px;
   }
 
   header {
@@ -345,39 +322,5 @@ p {
     p {
       margin-right: 0px;
     }
-  }
-
-  /* typography */
-  h2 {
-    color: #444752;
-    font-family: Formiga;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 20px;
-    margin-top: 8px;
-  }
-
-  h5 {
-    color: #444752;
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 22.5px */
-    margin-bottom: 8px;
-  }
-
-  p {
-    color: #444752;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-    margin-bottom: 8px;
-    margin-top: 8px;
-    margin-right: 0px;
   }
 }

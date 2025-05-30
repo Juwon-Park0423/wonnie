@@ -70,7 +70,6 @@ main img {
 
 @media (max-width: 480px) {
   body {
-    font-size: 14px;
     margin: 0;
     padding: 0;
   }
@@ -93,10 +92,6 @@ main img {
     width: 23px;
     height: 23px;
     margin: 0;
-  }
-
-  h1 {
-    font-size: 20px;
   }
 
   main {

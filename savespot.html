@@ -6,6 +6,7 @@
     <title>Savespot</title>
     <link rel="stylesheet" href="css/style-savespot.css" />
     <link rel="stylesheet" href="css/style-nav.css" />
+    <link rel="stylesheet" href="css/typo.css" />
     <link rel="stylesheet" href="https://use.typekit.net/dds1puu.css" />
     <script src="js/script.js"></script>
   </head>
@@ -60,7 +61,191 @@
         </div>
       </header>
     </div>
+    <section class="first-section">
+      <div class="first-section-1">
+        <h1>Save Spot</h1>
+        <h4>Community Crime Review Application</h4>
+
+        <h4><b>My Roles</b></h4>
+        <div class="tag-row">
+          <span>User Research</span>
+          <span>UI Design</span>
+          <span>Branding</span>
+          <span>Illustration</span>
+        </div>
+
+        <h4><b>Tools</b></h4>
+        <div class="tag-row">
+          <span>Figma</span>
+          <span>Visual Studio Code</span>
+          <span>Photoshop</span>
+          <span>Procreate</span>
+          <span>Nomad</span>
+        </div>
+
+        <h4><b>Project Duration</b></h4>
+        <h6>April, 2024 - June, 2024</h6>
+      </div>
+
+      <div class="first-section-2">
+        <img src="img/savespot-title.png" alt="" />
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="overview-0">
+        <h3>Overview</h3>
+        <div class="overview-wrapper">
+          <div class="overview-1">
+            An app that fosters positive awareness of crime prevention and
+            personal safety.
+          </div>
+
+          <div class="overview-2">
+            <h6>
+              Auckland is the largest city in New Zealand and home to many
+              university students. However, the crime rate in Auckland City is
+              rising.
+              <br /><br />
+              <b>
+                This app allows students to review and share information about
+                dangerous areas or incident locations through a map, helping
+                them live more safely.
+              </b>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="problem">
+      <div class="problem-1">
+        <!-- 첫 번째 줄 -->
+        <div class="problem-row">
+          <div class="map">
+            <img src="img/savespot-map.png" alt="map" />
+          </div>
+
+          <div class="problem-text">
+            <img src="img/Group 720.png" class="sticker sticker-x" />
+            <img src="img/Group 722.png" class="sticker sticker-warning" />
+            <h3>What is problem?</h3>
+            <p>
+              The crime rate in Auckland is continually increasing, and among
+              its areas,
+              <b>Auckland City</b> has the <b>highest crime rate.</b>
+            </p>
+          </div>
+        </div>
+
+        <!-- 두 번째 줄 -->
+        <div class="problem-row-2">
+          <div class="target-text">
+            <img
+              src="img/guardy-sticker.png"
+              alt=""
+              class="sticker sticker-guardy"
+            />
+            <h3>Our Target Audience</h3>
+            <p>
+              The primary target audience is <b>university students</b> based in
+              the city, especially <b>international students</b> who may face
+              additional safety challenges.
+            </p>
+          </div>
+
+          <div class="people">
+            <div class="person">
+              <img src="img/savespot-persona1.png" alt="Anna" />
+              <p>Anna Lee</p>
+            </div>
+            <div class="person">
+              <img src="img/savespot-persona2.png" alt="David" />
+              <p>David Wilson</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="savespot-home"><img src="img/savespot-home.png" alt="" /></div>
+    <section class="overview">
+      <div class="overview-0">
+        <h3>The App</h3>
+        <div class="overview-wrapper">
+          <div class="overview-1">
+            That helps students stay safe by sharing and reviewing incident
+            locations on a map.
+          </div>
+
+          <div class="overview-2">
+            <h6>
+              An app allows students to <b>review and share</b> information
+              about <b>dangerous areas or incident locations through a map</b>,
+              helping them <b>live more safely.</b>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <script>
+    // sticker-x 전용 observer
+    const observerX = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    const stickerX = document.querySelector(".sticker-x");
+    if (stickerX) {
+      observerX.observe(stickerX);
+    }
+
+    // sticker-warning 전용 observer
+    const observerWarning = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    const stickerWarning = document.querySelector(".sticker-warning");
+    if (stickerWarning) {
+      observerWarning.observe(stickerWarning);
+    }
+
+    // sticker-guardy 전용 observer
+    const observerGuardy = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    const stickerGuardy = document.querySelector(".sticker-guardy");
+    if (stickerGuardy) {
+      observerGuardy.observe(stickerGuardy);
+    }
+  </script>
+
   <footer>
     <div class="contact-section">
       <h1>Contact Me</h1>

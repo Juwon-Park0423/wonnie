@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff8f2;
+}
+
+/* ========== Layout ========== */
+.hero-bg {
+  background-color: #cec4fa;
+  height: 144px;
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+}
+
+.scallop {
+  background-color: #cec4fa;
+}
+
+.contact-button {
+  background: #ff96af;
+  color: #444752;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+  margin-top: 18%;
+}
+
+main img {
+  width: 570px;
+}
+/* ========== Button ========== */
+.contact-button:active {
+  background-color: #e36f8d; /* 눌렀을 때 색 */
+}
+
+.contact-button:hover {
+  background-color: #ffa4bb; /* 살짝 더 진한 핑크 */
+}
+
+.wrapper {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+.contact-top {
+  max-width: 1200px;
+  margin: 200px auto;
+  display: block;
+  max-width: 1160px;
+  width: 100%;
+}
+
+.social-media-1 {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px; /* 아이콘 간격 */
+}
+
+.contact-form {
+  margin-top: 40px;
+  max-width: 1160px;
+  margin-bottom: 120px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #444752;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #33363b;
+}
+
+/* 👇 contact-info 안에 있어도 폼은 시원하게 넓게 나오게 조정 */
+.contact-info {
+  width: 100%; /* 💡 혹시 width 제한이 있었다면 없애기 */
+}
+
+.contact-form {
+  max-width: none; /* 💡 부모 제한 제거 */
+  width: 100%;
+}
+
+.contact-form form {
+  max-width: 640px; /* ✅ 입력창 전체 너비 */
+  align-items: stretch; /* ✅ 라벨과 필드 왼쪽 정렬 */
+}
+
+.contact-form label {
+  text-align: left; /* ✅ 라벨 왼쪽 정렬 */
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    margin: auto 16px auto 16px;
+    padding: 0;
+  }
+  .contact-top {
+    margin-top: 130px;
+  }
+}
