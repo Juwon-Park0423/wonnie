@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #fff8f2;
 }
 
 /* ========== Layout ========== */
@@ -77,6 +77,7 @@ section {
 .card-button {
   margin-top: 80px;
   margin-bottom: 26px;
+  display: flex;
   a {
     background-color: #444752;
     text-decoration: none;
@@ -90,12 +91,12 @@ section {
     margin-right: 26px;
     border-radius: 15px;
   }
-  display: flex;
 }
 
 .work-card-1,
 .work-card-2 {
-  background-color: #fff8f2;
+  background-color: rgba(255, 255, 255, 0.6); /* 투명한 흰색 레이어 */
+  background-blend-mode: multiply; /* or overlay, screen, etc */
   max-width: 1160px;
   display: flex;
   border-radius: 20px;
@@ -351,7 +352,7 @@ p {
   h2 {
     color: #444752;
     font-family: Formiga;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -362,7 +363,7 @@ p {
   h5 {
     color: #444752;
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 22.5px */
@@ -372,7 +373,7 @@ p {
   p {
     color: #444752;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
