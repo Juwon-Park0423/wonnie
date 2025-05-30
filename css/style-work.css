@@ -81,7 +81,7 @@ section {
   a {
     background-color: #444752;
     text-decoration: none;
-    color: #faf9f6;
+    color: #fffafa;
     padding: 12px 50px;
     font-family: Poppins;
     font-size: 16px;
@@ -95,7 +95,7 @@ section {
 
 .work-card-1,
 .work-card-2 {
-  background-color: #faf9f6; /* 투명한 흰색 레이어 */
+  background-color: #fffafa; /* 투명한 흰색 레이어 */
   max-width: 1160px;
   display: flex;
   border-radius: 20px;
