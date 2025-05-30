@@ -93,24 +93,7 @@ section {
   display: flex;
 }
 
-.work-card-1 {
-  background-color: #fff8f2;
-  max-width: 1160px;
-  display: flex;
-  border-radius: 20px;
-  background-image: url(../img/note.png);
-  background-size: 80%;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
-
-  img {
-    max-width: 465px;
-    border-radius: 20px 0px 0px 20px;
-  }
-  p {
-    margin-right: 130px;
-  }
-}
-
+.work-card-1,
 .work-card-2 {
   background-color: #fff8f2;
   max-width: 1160px;
@@ -119,15 +102,36 @@ section {
   background-image: url(../img/note.png);
   background-size: 80%;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
-
-  img {
-    max-width: 465px;
-    border-radius: 0px 20px 20px 0px;
-    height: 100%;
-  }
+  flex-direction: row;
+  align-items: stretch; /* ✅ 좌우 높이 맞추기 */
+  overflow: hidden;
+  border-radius: 20px;
   p {
     margin-right: 130px;
   }
+}
+
+.work-card-1 img {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.pc-image img,
+.work-card-1 img {
+  width: 100%;
+  max-width: 465px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.pc-image img {
+  border-radius: 0 20px 20px 0;
+}
+
+.pc-image {
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
 }
 
 /* typography */
@@ -244,10 +248,19 @@ p {
     margin-right: 16px;
   }
 
+  .first-section {
+    margin-top: 64px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   section {
     margin-top: 64px;
-    margin-left: 96px;
-    margin-right: 96px;
+    margin-left: 16px;
+    margin-right: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,16 +295,22 @@ p {
 
   .pc-image {
     display: none;
-    max-width: 360px;
-    border-radius: 20px 20px 0px 0px;
   }
 
-  .mobile-image {
+  .mobile-image img {
     display: block;
     max-width: 360px;
     width: 100%;
     height: auto;
     border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .mobile-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: stretch;
   }
 
   .work-card-1 {
