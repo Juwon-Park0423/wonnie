@@ -1,0 +1,376 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px;
+  position: relative;
+  margin-left: 96px;
+  margin-right: 96px;
+}
+
+header a {
+  color: #444752;
+  font-family: Formiga;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.contact-button {
+  border-radius: 13.326px;
+  border: 3px solid #444752;
+  box-shadow: 5px 5px 0px 0px #444752;
+  display: flex;
+  height: 44px;
+  padding: 11px 21px;
+  justify-content: center;
+  align-items: center;
+  font-family: Formiga;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ========== Button ========== */
+.contact-button:active {
+  box-shadow: 2px 2px 0px 0px #444752;
+  transform: translateY(2px); /* 눌린 듯한 느낌 */
+}
+
+.contact-button:focus {
+  outline: 2px solid #444752;
+  outline-offset: 3px;
+}
+
+/* ========== Mobile Menu ========== */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 1000;
+  position: relative;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff8f2;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.mobile-menu.show {
+  transform: translateX(0);
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: auto;
+  box-sizing: none;
+  margin-top: 12px;
+}
+
+.mobile-menu-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.mobile-menu .contact-button {
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* ========== Scallop ========== */
+.scallop-row {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.scallop {
+  width: 160px;
+  height: 160px;
+  border-radius: 0 0 160px 160px;
+  flex-shrink: 0;
+}
+
+/* style.css */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* 페이지 로드되면 클래스 추가 */
+.fade-in-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*footer*/
+
+footer {
+  background-color: #444752;
+  margin-top: 120px;
+  padding-top: 66px;
+  padding-bottom: 35px;
+  padding-left: 96px;
+  padding-right: 96px;
+  h1 {
+    margin-top: 0;
+    color: #fff;
+    font-family: Formiga;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.contact-section {
+  color: white;
+  padding: 64px 32px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contact-section p {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin: 0 0 0 0;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-self: flex-end; /* 오른쪽 아래 붙이기 */
+  margin-top: auto;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 48px 0 24px;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.copyright {
+  text-align: right;
+  opacity: 0.8;
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+/* ========== Media Queries ========== */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .nav-links,
+  header > .contact-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .scallop-row {
+    bottom: -40px;
+  }
+
+  .scallop {
+    width: 80px;
+    height: 80px;
+    border-radius: 0 0 80px 80px;
+  }
+
+  .icon {
+    width: 23px;
+    height: 23px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 32px 16px 60px 16px;
+    margin: 0;
+    a {
+      margin: 0;
+      img {
+        width: 28px;
+      }
+    }
+  }
+
+  body.menu-open .hamburger {
+    display: none;
+  }
+
+  footer {
+    background-color: #444752;
+    margin-top: 120px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+    h1 {
+      margin-top: 0;
+      color: #fff;
+      font-family: Formiga;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  .contact-section {
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contact-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .contact-section p {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin: 0 0 0 0;
+  }
+
+  .contact-main {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    gap: 16px;
+  }
+
+  .footer-item {
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .social-media {
+    display: flex;
+    gap: 16px;
+    align-self: flex-end; /* 오른쪽 아래 붙이기 */
+    margin-top: 30px;
+  }
+
+  .social-media img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  hr {
+    margin: 48px 0 24px;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .copyright {
+    text-align: right;
+    opacity: 0.8;
+    color: #fff;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+}

@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff8f2;
+  display: flex;
+}
+
+/* ========== Layout ========== */
+.hero-bg {
+  background-color: #cec4fa;
+  height: 144px;
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+}
+
+.scallop {
+  background-color: #cec4fa;
+}
+
+.contact-button {
+  background: #ff96af;
+  color: #444752;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+  margin-top: 18%;
+}
+
+main img {
+  width: 570px;
+}
+/* ========== Button ========== */
+.contact-button:active {
+  background-color: #e36f8d; /* 눌렀을 때 색 */
+}
+
+.contact-button:hover {
+  background-color: #ffa4bb; /* 살짝 더 진한 핑크 */
+}
+
+.intro {
+  text-align: center;
+  margin-top: 360px;
+  background-color: #ff96af;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  img {
+    width: 30%;
+  }
+  .rounded-dash {
+    height: 6px;
+    background-image: repeating-linear-gradient(
+      to right,
+      #fff8f2,
+      #fff8f2 20px,
+      transparent 20px,
+      transparent 36px
+    );
+    border-radius: 999px;
+    width: 100%;
+    margin: 32px auto;
+    background-color: #ff96af; /* 배경색 */
+  }
+
+  h1 {
+    margin-top: 60px;
+  }
+}
+
+.introduction {
+  margin-left: 96px;
+  margin-right: 96px;
+  display: flex;
+}
+
+.intro-card {
+  text-align: left;
+  background-color: #fff8f2;
+  background-image: url(../img/note.png);
+  border-radius: 20px;
+}
+
+/* ========== Media Queries ========== */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .nav-links,
+  header > .contact-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-bg {
+    height: 70px;
+  }
+
+  .scallop-row {
+    bottom: -40px;
+  }
+
+  .scallop {
+    width: 80px;
+    height: 80px;
+    border-radius: 0 0 80px 80px;
+  }
+
+  .icon {
+    width: 23px;
+    height: 23px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+    margin-top: 50%;
+  }
+
+  main img {
+    width: 284px;
+  }
+
+  header {
+    padding: 32px 16px 60px 16px;
+    margin: 0;
+    a {
+      margin: 0;
+      img {
+        width: 28px;
+      }
+    }
+  }
+
+  body.menu-open .hamburger {
+    display: none;
+  }
+}
