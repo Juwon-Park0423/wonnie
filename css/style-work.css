@@ -95,8 +95,7 @@ section {
 
 .work-card-1,
 .work-card-2 {
-  background-color: rgba(255, 255, 255, 0.6); /* 투명한 흰색 레이어 */
-  background-blend-mode: multiply; /* or overlay, screen, etc */
+  background-color: #f1faff; /* 투명한 흰색 레이어 */
   max-width: 1160px;
   display: flex;
   border-radius: 20px;
