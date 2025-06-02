@@ -56,7 +56,16 @@ h6 {
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+
+h6 b {
+  color: #444752;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 150%; /* 18px */
 }
 
@@ -67,6 +76,15 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+}
+
+.body-head {
+  color: #444752;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 /* mobile */
