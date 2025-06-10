@@ -48,10 +48,9 @@ main img {
   padding-right: 96px;
 }
 .contact-top {
-  max-width: 1200px;
+  max-width: 1002px;
   margin: 200px auto;
   display: block;
-  max-width: 1160px;
   width: 100%;
 }
 
@@ -63,7 +62,7 @@ main img {
 
 .contact-form {
   margin-top: 40px;
-  max-width: 1160px;
+  max-width: 1002px;
   margin-bottom: 120px;
 }
 

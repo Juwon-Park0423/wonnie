@@ -38,6 +38,32 @@ main {
 main img {
   width: 570px;
 }
+
+.first-section {
+  h4 b {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #444752;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  h4 {
+    color: #444752;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 19.5px */
+  }
+
+  h6 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
 /* ========== Button ========== */
 .contact-button:active {
   background-color: #adadad; /* 눌렀을 때 색 */
@@ -47,7 +73,7 @@ main img {
   background-color: #adadad; /* 눌렀을 때 색 */
 }
 section {
-  margin: 0 96px;
+  margin: 0 138px;
 }
 .first-section {
   display: flex;
@@ -89,7 +115,7 @@ section {
   padding: 7px 12px;
   color: #444752;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   white-space: nowrap;
 }
@@ -100,13 +126,12 @@ section {
   cursor: default; /* optional: pointer 대신 default */
 }
 /* overview section */
-
 .overview {
   display: flex;
   justify-content: center;
   background: #f1d8e5;
   margin: 0;
-  padding: 41px 96px;
+  padding: 41px 138px;
   align-self: stretch;
 }
 
@@ -139,7 +164,6 @@ section {
 }
 
 /* problem & persona section */
-
 .problem {
   padding: 64px 0px; /* ✅ 좌우 마진 고정 */
   margin-bottom: 120px;
@@ -340,18 +364,16 @@ section {
 }
 
 /* the app */
-
 .the-app {
   display: flex;
   justify-content: center;
   background: #f1d8e5;
   margin: 0;
-  padding: 41px 96px;
+  padding: 41px 138px;
   align-self: stretch;
 }
 
 /* final outcome section */
-
 .final-outcome {
   max-width: 1088px;
   margin: 80px auto;
@@ -418,7 +440,6 @@ section {
 }
 
 /* other contexts section */
-
 .other-contexts {
   max-width: 1088px;
   margin: 60px auto;

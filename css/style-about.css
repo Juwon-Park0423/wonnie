@@ -7,6 +7,7 @@ body {
   background-color: #fff8f2;
 }
 
+/* ========== Layout ========== */
 .hero-bg {
   background-color: #cec4fa;
   height: 144px;
@@ -33,29 +34,35 @@ main {
 main img {
   width: 570px;
 }
-
+/* ========== Button ========== */
 .contact-button:active {
-  background-color: #e36f8d;
+  background-color: #e36f8d; /* 눌렀을 때 색 */
 }
 
 .contact-button:hover {
-  background-color: #ffa4bb;
+  background-color: #ffa4bb; /* 살짝 더 진한 핑크 */
 }
 
+.first-section {
+  margin-top: 200px;
+  margin-left: 96px;
+  margin-right: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Intro Section */
 .intro {
   text-align: center;
   margin-top: 200px;
   background-color: #ff96af;
   padding: 28px 0;
-  min-height: 100vh; /* Footer 밀림 방지 */
-}
-
-.intro img {
-  width: 30%;
+  height: auto;
 }
 
 .intro .rounded-dash {
-  height: 6px;
+  height: 5px;
   background-image: repeating-linear-gradient(
     to right,
     #fff8f2,
@@ -63,172 +70,214 @@ main img {
     transparent 20px,
     transparent 36px
   );
-  border-radius: 999px;
+  border-radius: 100px;
   width: 100%;
-  margin: 32px auto;
-  background-color: #ff96af;
 }
 
-.intro h1 {
+.intro h1,
+.intro h2 {
   margin-top: 60px;
 }
 
 .introduction {
-  margin: 0 96px;
+  margin: 0 auto;
   display: flex;
   gap: 48px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  max-width: 1002px;
+  flex-wrap: wrap;
+}
+
+.introduction img {
+  max-width: 400px;
+  height: auto;
+  transform: rotate(5deg);
+  flex-shrink: 0;
+  margin-top: -40px;
 }
 
 .intro-card {
   text-align: left;
   background-color: #fff8f2;
   background-image: url(../img/note.png);
+  background-size: 190%;
   border-radius: 20px;
   padding: 24px;
+  max-width: 475px;
+  height: auto;
+  transform: rotate(5.095deg);
+  flex-shrink: 0;
+  margin-top: 20px;
+  margin-bottom: 35px;
 }
 
-footer {
-  background-color: #444752;
-  margin-top: 120px;
-  padding: 66px 96px 35px;
-}
-
-footer h1 {
-  margin-top: 0;
-  color: #fff;
-  font-family: Formiga;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.contact-section {
-  color: white;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.contact-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-  text-decoration: none;
-}
-
-.social-media {
-  display: flex;
-  gap: 16px;
-  align-self: flex-end;
-  margin-top: auto;
-}
-
-.social-media img {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
-hr {
-  margin: 48px 0 24px;
-  border: 0.5px solid rgba(255, 255, 255, 0.3);
-}
-
-copyright {
-  text-align: right;
-  color: #fff;
-  opacity: 0.8;
+.intro-card-text h6 {
+  color: #444752;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
-/* ========== Media Queries ========== */
+.hashtags {
+  margin-top: 20px;
+  color: #444752;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.skill-card {
+  background-color: #fff8f2;
+  border-radius: 20px;
+  padding: 24px;
+  width: 300px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.skill-card h3 {
+  margin-top: 0;
+}
+
+.skill-card ul {
+  padding-left: 20px;
+}
+
+.skill-card-hard-skills,
+.skill-card-tools {
+  width: 300px;
+  height: 370px;
+  background-image: url(../img/myskill-background2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.skill-card-soft-skills {
+  width: 300px;
+  height: 370px;
+  background-image: url(../img/myskill-background1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.skill-card-hard-skills li,
+.skill-card-tools li,
+.skill-card-soft-skills li {
+  color: #444752;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 250%; /* 32.5px */
+  text-align: left;
+}
+
+.skill-card-hard-skills h3,
+.skill-card-tools h3,
+.skill-card-soft-skills h3 {
+  color: #444752;
+  font-family: Formiga;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Values Section */
+.values-section {
+  padding: 80px 0;
+  background-color: #cec4fa;
+  text-align: center;
+}
+
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.value-card {
+  background-color: #fff8f2;
+  border-radius: 20px;
+  padding: 24px;
+  width: 300px;
+  text-align: center;
+}
+
+.value-icon {
+  margin-bottom: 12px;
+}
+
+.value-icon img {
+  max-width: 130px;
+}
+
+.value-card p {
+  color: #444752;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 22.5px */
+}
+
+.value-card ul {
+  list-style-type: disc;
+  color: #444752;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  text-align: left;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  .icon {
-    width: 48px;
-    height: 48px;
-  }
-
-  .nav-links,
-  header > .contact-button {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .hero-bg {
-    height: 70px;
-  }
-
-  .scallop-row {
-    bottom: -40px;
-  }
-
-  .scallop {
-    width: 80px;
-    height: 80px;
-    border-radius: 0 0 80px 80px;
-  }
-
-  .icon {
-    width: 23px;
-    height: 23px;
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  main {
+  .introduction {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-top: 50%;
   }
 
-  main img {
-    width: 284px;
+  .skills-grid,
+  .values-grid {
+    flex-direction: column;
+    gap: 24px;
   }
 
-  header {
-    padding: 32px 16px 60px 16px;
-    margin: 0;
-    a {
-      margin: 0;
-      img {
-        width: 28px;
-      }
-    }
-  }
-
-  body.menu-open .hamburger {
-    display: none;
+  .intro-card,
+  .skill-card,
+  .value-card {
+    max-width: 90%;
   }
 }

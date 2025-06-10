@@ -96,7 +96,7 @@ section {
 .work-card-1,
 .work-card-2 {
   background-color: #fffafa; /* 투명한 흰색 레이어 */
-  max-width: 1088px;
+  max-width: 1002px;
   display: flex;
   border-radius: 20px;
   background-image: url(../img/note.png);
