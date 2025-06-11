@@ -6,7 +6,6 @@
 body {
   margin: 0;
   background-color: #fff8f2;
-  display: flex;
 }
 
 /* ========== Layout ========== */
@@ -36,30 +35,418 @@ main img {
   width: 570px;
 }
 /* ========== Button ========== */
-.contact-button:active {
+.contact-button:active,
+.about-button:active {
   background-color: #e36f8d; /* 눌렀을 때 색 */
 }
 
-.contact-button:hover {
+.contact-button:hover,
+.about-button:hover {
   background-color: #ffa4bb; /* 살짝 더 진한 핑크 */
 }
 
+.about-button {
+  border-radius: 13.326px;
+  border: 3px solid #444752;
+  box-shadow: 5px 5px 0px 0px #444752;
+  display: flex;
+  height: 44px;
+  padding: 11px 21px;
+  justify-content: center;
+  align-items: center;
+  font-family: Formiga;
+  font-size: 20px;
+  font-weight: 700;
+  background: #ff96af;
+  color: #444752;
+}
+
+/* ========== Button ========== */
+.about-button:active {
+  box-shadow: 2px 2px 0px 0px #444752;
+  transform: translateY(2px); /* 눌린 듯한 느낌 */
+}
+
+.about-button:focus {
+  outline: 2px solid #444752;
+  outline-offset: 3px;
+}
+
+.scroll-down-stack {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #444752;
+  text-decoration: underline;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  text-decoration: none;
+}
+
+.scroll-down-stack img {
+  width: 24px;
+  height: 24x;
+  opacity: 0.8;
+}
+
+.about {
+  margin-top: 300px;
+  max-width: 1440px;
+  padding: 0 138px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons button {
+  margin-right: 20px;
+}
+
+section {
+  max-width: 1440px;
+  margin: 80px auto;
+  padding: 0 138px;
+}
+
+.about-first {
+  display: flex;
+  position: relative;
+}
+
+.about-text {
+  max-width: 400px;
+}
+
+.about-text p {
+  margin-bottom: 48px;
+}
+
+.juwon-img-mobile img {
+  display: none;
+}
+
+.juwon-img-pc img {
+  display: block;
+  width: 500px;
+  margin-left: 200px;
+  margin-top: -50px;
+}
+
+.sticker1 {
+  position: absolute;
+  width: 100px; /* 필요에 따라 조절 */
+  height: auto;
+}
+
+.sticker2 {
+  position: absolute;
+  width: 70px; /* 필요에 따라 조절 */
+  height: auto;
+} /* 프로젝트 캐러셀 */
+.project-carousel {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.project-carousel h2 {
+  text-align: left;
+  padding-left: 138px;
+}
+
+.carousel-wrapper {
+  max-width: 1440px;
+  margin: 0 138px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: calc(1440px - 276px); /* 1440 - padding * 2 */
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 블러 오버레이 효과 */
+.carousel-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.carousel-slide:hover::before {
+  opacity: 1;
+}
+
+/* 링크 버튼 */
+.carousel-slide a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.carousel-slide:hover a {
+  opacity: 1;
+}
+
+.carousel-dots {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #444752;
+}
+
+/* 애니메이션 */
+@keyframes slide-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+@keyframes spin-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-counter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.spin-right {
+  animation: spin-clockwise 4s linear infinite;
+}
+
+.spin-left {
+  animation: spin-counter 6s linear infinite;
+}
+
+/* 위치 지정 */
+.top-left {
+  position: absolute;
+  top: 1px;
+  left: 450px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* 살짝 아래로 흔들리는 애니메이션 */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(6px);
+  }
+}
+
 /* ========== Media Queries ========== */
-@media (max-width: 768px) {
+
+@media (max-width: 1280px) {
+  .juwon-img img {
+    width: 500px;
+    margin-left: 100px;
+    margin-top: -50px;
+  }
 }
 
 @media (max-width: 480px) {
   .hero-bg {
-    height: 80vh;
+    height: 90vh;
+  }
+  .scroll-down-stack span {
+    width: 300px;
+    text-align: center;
+  }
+  .about {
+    margin-top: 200px;
+    padding: 0 16px;
+  }
+
+  .about-first {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .juwon-img-pc img {
+    display: none;
+  }
+
+  .juwon-img-mobile img {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+  }
+
+  .about-text {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .about-text p {
+    max-width: 320px;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 
   main {
-    align-items: center;
-    text-align: center;
-    margin-top: 20vh;
+    margin-top: 25vh;
   }
 
   main img {
-    width: 284px;
+    width: 70vw;
   }
+
+  .about {
+    padding: 0 24px;
+  }
+  .carousel-wrapper {
+    padding: 0 16px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    width: 100%;
+  }
+
+  .carousel-slide {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    padding: 0 16px;
+  }
+
+  .carousel-slide::before {
+    display: none; /* 블러 제거 */
+  }
+
+  .carousel-slide a {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #444752;
+    color: white;
+    font-size: 14px;
+    padding: 8px 0px;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project-carousel h2 {
+    padding-left: 16px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .carousel-dots {
+    margin-top: 16px;
+  }
+
+  .sticker1,
+  .sticker2 {
+    width: 40px;
+  }
+
+  .top-left {
+    top: 8px;
+    left: 8px;
+  }
+
+  .bottom-right {
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .project-carousel {
+    margin-bottom: 0px;
+  }
+}
+
+#scrollToTop:hover {
+  background-color: #b3a9e6;
+}
+
+#scrollToTop {
+  background-color: #cec4fa;
 }

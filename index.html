@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style-nav.css" />
     <link rel="stylesheet" href="css/typo.css" />
     <link rel="stylesheet" href="https://use.typekit.net/dds1puu.css" />
-    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="hero-bg">
@@ -46,7 +45,10 @@
           <img src="img/woonielogowhite.png" alt="" />
         </main>
       </div>
-
+      <a href="#about" class="scroll-down-stack">
+        <span>Scroll down for more info</span>
+        <img src="img/down-arrow.svg" alt="Scroll down" />
+      </a>
       <div class="scallop-row">
         <div class="scallop"></div>
         <div class="scallop"></div>
@@ -66,5 +68,111 @@
         <div class="scallop"></div>
       </div>
     </div>
+    <section class="about" id="about">
+      <div class="about-first">
+        <div>
+          <div class="juwon-img-mobile"><img src="img/juwon.png" alt="" /></div>
+          <div class="about-text">
+            <h2>Hi, I'm Wonnie!</h2>
+            <p>
+              I'm Juwon Park, a UI/UX designer in Auckland. I focus on honest,
+              user-centered design to create clear, intuitive, and trustworthy
+              experiences.
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="about-button" onclick="location.href='about.html'">
+              About Me!
+            </button>
+            <button
+              class="contact-button"
+              onclick="location.href='contact.html'"
+            >
+              Contact Me!
+            </button>
+          </div>
+          <img
+            src="img/sticker1.png"
+            class="sticker1 top-left spin-left"
+            alt=""
+          /><img
+            src="img/sticker2.png"
+            class="sticker2 bottom-right spin-right"
+            alt=""
+          />
+        </div>
+        <div class="juwon-img-pc"><img src="img/juwon.png" alt="" /></div>
+      </div>
+    </section>
+    <section class="project-carousel">
+      <h2>Some of my recent work..</h2>
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="img/savespot-1.png" alt="Project 1" />
+            <a href="savespot.html">View Project →</a>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/savespot-home.png" alt="Project 2" />
+            <a href="snacky.html">View Project →</a>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/hookywooly.png" alt="Project 3" />
+            <a href="hookywooly.html">View Project →</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+    <button id="scrollToTop" title="Go to top">↑</button>
   </body>
+  <footer>
+    <div class="contact-section">
+      <h1>Contact Me</h1>
+
+      <div class="contact-main">
+        <div class="contact-info">
+          <div class="footer-item">
+            <img src="img/distance.svg" alt="location" />
+            <span> <p>Auckland, New Zealand</p></span>
+          </div>
+          <div class="footer-item">
+            <img src="img/call.svg" alt="phone" />
+            <span
+              ><a href="tel:+6421203220"><p>+64 021 203 2207</p></a></span
+            >
+          </div>
+          <div class="footer-item">
+            <img src="img/mail.svg" alt="email" />
+            <span
+              ><a href="mailto:joowonpark0423@gmail.com"
+                ><p>joowonpark0423@gmail.com</p></a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div class="social-media">
+          <a href="https://www.instagram.com/joo_oneee/"
+            ><img src="img/instagram.svg" alt="instagram"
+          /></a>
+          <a href="https://www.facebook.com/profile.php?id=100008294239112"
+            ><img src="img/facebook.svg" alt="facebook"
+          /></a>
+          <a href="https://www.linkedin.com/in/juwon-park-385680276/"
+            ><img src="img/linke.svg" alt="linkedin"
+          /></a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="copyright">©Juwon Park</div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </html>

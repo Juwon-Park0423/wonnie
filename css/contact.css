@@ -131,3 +131,11 @@ main img {
     margin-top: 130px;
   }
 }
+
+#scrollToTop:hover {
+  background-color: #b3a9e6;
+}
+
+#scrollToTop {
+  background-color: #cec4fa;
+}

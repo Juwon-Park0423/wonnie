@@ -7,6 +7,14 @@ body {
   background-color: #fff8f2;
 }
 
+#scrollToTop {
+  background-color: #ffe66d;
+}
+
+#scrollToTop:hover {
+  background-color: #ffa96c;
+}
+
 /* ========== Layout ========== */
 .hero-bg {
   background-color: #ffa96c;
