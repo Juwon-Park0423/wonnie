@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+#scrollToTop {
+  background-color: #00c875;
+}
+
+#scrollToTop:hover {
+  background-color: #06a237;
+}
+
 body {
   margin: 0;
   background-color: #fff8f2;

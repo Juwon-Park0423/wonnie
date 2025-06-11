@@ -8,3 +8,12 @@ function toggleMenu() {
 window.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".fade-in-section").classList.add("show");
 });
+
+const scrollToTopBtn = document.getElementById("scrollToTop");
+
+scrollToTopBtn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};

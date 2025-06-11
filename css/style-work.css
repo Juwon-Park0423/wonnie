@@ -44,9 +44,10 @@ main img {
 }
 
 .first-section {
-  margin-top: 200px;
-  margin-left: 96px;
-  margin-right: 96px;
+  max-width: 1440px;
+  margin: 200px auto 0 auto;
+  padding-left: 138px;
+  padding-right: 138px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,9 +58,10 @@ main img {
 }
 
 section {
-  margin-top: 64px;
-  margin-left: 96px;
-  margin-right: 96px;
+  max-width: 1440px;
+  margin: 64px auto 0 auto;
+  padding-left: 138px;
+  padding-right: 138px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +98,6 @@ section {
 .work-card-1,
 .work-card-2 {
   background-color: #fffafa; /* 투명한 흰색 레이어 */
-  max-width: 1002px;
   display: flex;
   border-radius: 20px;
   background-image: url(../img/note.png);
@@ -212,12 +213,11 @@ p {
   }
 
   .first-section {
-    margin-top: 80px;
-    margin-left: 96px;
-    margin-right: 96px;
+    margin: 80px auto 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 16px;
   }
 
   .card-info {
@@ -225,22 +225,12 @@ p {
     margin-right: 16px;
   }
 
-  .first-section {
-    margin-top: 64px;
-    margin-left: 16px;
-    margin-right: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   section {
-    margin-top: 64px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 60px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 16px;
   }
 
   .card-button {
@@ -323,4 +313,12 @@ p {
       margin-right: 0px;
     }
   }
+}
+
+#scrollToTop:hover {
+  background-color: #b3a9e6;
+}
+
+#scrollToTop {
+  background-color: #cec4fa;
 }

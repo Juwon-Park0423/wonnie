@@ -4,8 +4,7 @@ header {
   justify-content: space-between;
   padding: 32px 24px;
   position: relative;
-  margin-left: 138x;
-  margin-right: 138px;
+  margin: 0 138px;
 }
 
 header a {
@@ -223,7 +222,20 @@ hr {
   font-weight: 400;
   line-height: 150%; /* 24px */
 }
-
+#scrollToTop {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  color: #444752;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 /* ========== Media Queries ========== */
 @media (max-width: 768px) {
   body {
