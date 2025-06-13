@@ -543,6 +543,18 @@ section {
   object-fit: cover;
 }
 
+.fullprocess {
+  display: flex;
+  justify-content: center;
+  background: #00c875;
+  align-self: stretch;
+  margin: 0;
+}
+
+.overview-0 a {
+  text-decoration: none;
+}
+
 /* ========== Media Queries ========== */
 @media (max-width: 768px) {
   body {
