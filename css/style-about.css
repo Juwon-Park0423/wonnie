@@ -609,7 +609,9 @@ main img {
   .skill-card-hard-skills,
   .skill-card-tools {
     background-color: #fff;
-    border: 5px dotted #cec4fa;
+    border-width: 5px;
+    border-color: #b3a9e6;
+    border-style: dotted;
   }
   .skills-section h3 {
     font-size: 20px;

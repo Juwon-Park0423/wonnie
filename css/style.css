@@ -154,7 +154,6 @@ section {
 } /* 프로젝트 캐러셀 */
 .project-carousel {
   padding: 60px 0;
-  background-color: #f9f9f9;
   text-align: center;
 }
 
@@ -247,6 +246,16 @@ section {
 
 .dot.active {
   background-color: #444752;
+}
+
+.pc-img {
+  display: block !important;
+  border-radius: 20px;
+}
+
+.mobile-img {
+  display: none !important;
+  border-radius: 20px;
 }
 
 /* 애니메이션 */
@@ -440,6 +449,16 @@ html {
 
   .project-carousel {
     margin-bottom: 0px;
+  }
+
+  .pc-img {
+    display: none !important;
+    border-radius: 20px;
+  }
+
+  .mobile-img {
+    display: block !important;
+    border-radius: 20px;
   }
 }
 

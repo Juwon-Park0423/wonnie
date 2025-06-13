@@ -48,16 +48,21 @@ main img {
 }
 
 .first-section {
+  h1 {
+    margin: 16px 0 16px;
+  }
+
   h4 b {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin: 16px 0 16px;
     color: #444752;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
   }
-
+  b {
+    margin: 16px 0 16px;
+  }
   h4 {
     color: #444752;
     font-family: Poppins;
@@ -65,11 +70,11 @@ main img {
     font-style: normal;
     font-weight: 300;
     line-height: 150%; /* 19.5px */
+    margin: 16px 0 16px;
   }
 
   h6 {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin: 16px 0 16px;
   }
 }
 /* ========== Button ========== */
@@ -87,8 +92,9 @@ section {
   display: flex;
   flex-wrap: wrap; /* ✅ 모바일 대응 */
   align-items: stretch; /* ✅ 높이 동일하게 */
-  max-width: 1090px;
+  max-width: 1440px;
   margin: 200px auto 120px;
+  padding: 0 138px;
 }
 
 .first-section-1,
@@ -114,7 +120,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 12px;
-  margin: 12px 0 24px;
+  margin: 16px 0 16px;
 }
 
 .tag-row span {
@@ -138,18 +144,27 @@ section {
   display: flex;
   justify-content: center;
   background: #f1d8e5;
-  margin: 0;
-  padding: 41px 138px;
   align-self: stretch;
+  margin: 0;
 }
 
 .overview-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+}
+.overview-1,
+.overview-2 {
+  flex: 1 1 0; /* grow, shrink, basis */
+  max-width: 610px; /* 최대 너비만 제한 */
 }
 
 .overview-0 {
-  max-width: 1090px;
-  align-items: center;
+  max-width: 1440px;
+  padding: 40px 138px;
+  margin: 0 auto;
 }
 
 .overview-1 {
@@ -159,25 +174,17 @@ section {
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 36px */
-  max-width: 410px;
-  margin-right: 24px;
 }
 
 .overview-2 h6 {
   margin-top: 0;
 }
 
-.overview-2 {
-  max-width: 610px;
-}
-
 /* problem & persona section */
 .problem {
-  padding: 64px 0px; /* ✅ 좌우 마진 고정 */
-  margin-bottom: 120px;
-  margin-top: 120px;
-  max-width: 1088px;
+  max-width: 1440px;
   margin: 120px auto;
+  padding: 0 138px;
 }
 
 .problem-1 {
@@ -197,7 +204,7 @@ section {
 }
 
 .map img {
-  max-width: 528px;
+  max-width: 480px;
   border-radius: 20px;
 }
 
@@ -376,34 +383,78 @@ section {
   display: flex;
   justify-content: center;
   background: #f1d8e5;
-  margin: 0;
-  padding: 41px 138px;
   align-self: stretch;
+  margin: 0;
 }
 
 /* final outcome section */
 .final-outcome {
-  max-width: 1088px;
+  max-width: 1440px;
   margin: 80px auto;
+  padding: 0 138px;
+}
+.phone-prototype {
+  width: 75%;
+  max-width: 390px;
+  aspect-ratio: 9 / 19.5;
+  border: 12px solid #000;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.phone-wrapper {
+  width: calc(390px * 0.9); /* 약 292.5px */
+}
+
+.user-comment img {
+  max-width: 248px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.phone-prototype video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+.hifi iframe {
+  margin-top: 24px;
+  max-width: 1440px;
+  width: 100%;
+  height: 560px;
+  display: block;
+  object-fit: cover; /* 필요 시: 채우기 */
+  border-radius: 20px; /* 필요 시 */
 }
 
 .outcome-1,
 .outcome-2,
 .outcome-3 {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .prototype-1,
 .prototype-2,
 .prototype-3 {
   display: flex;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.user-comment {
+  margin: 16px 16px;
 }
 
 .text {
   max-width: 248px;
-  background-color: #fffafa;
+  background-color: #ffffff;
   padding: 20px 12px;
   border-radius: 20px;
+  margin-bottom: 24px;
 }
 
 .text span {
@@ -429,8 +480,9 @@ section {
 /* mock up section */
 .mock-ups {
   display: block;
-  max-width: 1088px;
+  max-width: 1440px;
   margin: 80px auto;
+  padding: 0 138px;
 }
 
 .mock-ups span {
@@ -441,20 +493,30 @@ section {
   margin-top: 8px;
 }
 
+.mock-ups-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
 .mock-ups-img img {
-  max-width: 528px;
-  border-radius: 20px;
-  margin-top: 80px;
+  width: calc(50% - 8px); /* 50%에서 반쪽 간격 빼줌 */
+  height: auto;
+  display: block;
+  border-radius: 20px; /* 원하면 */
 }
 
 /* other contexts section */
 .other-contexts {
-  max-width: 1088px;
+  max-width: 1440px;
   margin: 60px auto;
+  padding: 0 138px;
 }
 
 .other-contexts h3 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 800;
   margin-bottom: 40px;
   color: #2e2e3a;
