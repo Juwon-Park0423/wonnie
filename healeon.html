@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snacky</title>
+    <link rel="stylesheet" href="css/healeon.css" />
+    <link rel="stylesheet" href="css/style-nav.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dds1puu.css" />
+    <link rel="icon" href="favicon.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="hero-bg">
+      <div class="scallop-row">
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+      </div>
+      <header>
+        <a href="index.html"><img src="img/woonieicon.svg" alt="" /></a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="works.html">Work</a>
+        </nav>
+        <button class="contact-button" onclick="location.href='contact.html'">
+          Contact Me!
+        </button>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <!-- Mobile Menu (여기서 버튼도 포함) -->
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close-button" onclick="toggleMenu()">✕</button>
+          <div class="mobile-menu-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="works.html">Work</a>
+            <button
+              class="contact-button"
+              onclick="location.href='contact.html'"
+            >
+              Contact Me!
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+  <footer>
+    <div class="contact-section">
+      <h1>Contact Me</h1>
+
+      <div class="contact-main">
+        <div class="contact-info">
+          <div class="footer-item">
+            <img src="img/distance.svg" alt="location" />
+            <span> <p>Auckland, New Zealand</p></span>
+          </div>
+          <div class="footer-item">
+            <img src="img/call.svg" alt="phone" />
+            <span
+              ><a href="tel:+6421203220"><p>+64 021 203 2207</p></a></span
+            >
+          </div>
+          <div class="footer-item">
+            <img src="img/mail.svg" alt="email" />
+            <span
+              ><a href="mailto:joowonpark0423@gmail.com"
+                ><p>joowonpark0423@gmail.com</p></a
+              ></span
+            >
+          </div>
+        </div>
+
+        <div class="social-media">
+          <a href="https://www.instagram.com/joo_oneee/"
+            ><img src="img/instagram.svg" alt="instagram"
+          /></a>
+          <a href="https://www.facebook.com/profile.php?id=100008294239112"
+            ><img src="img/facebook.svg" alt="facebook"
+          /></a>
+          <a href="https://www.linkedin.com/in/juwon-park-385680276/"
+            ><img src="img/linkedin.svg" alt="linkedin"
+          /></a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="copyright">©Juwon Park</div>
+    </div>
+  </footer>
+</html>

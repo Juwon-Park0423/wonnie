@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+#scrollToTop {
+  background-color: #00c875;
+}
+
+#scrollToTop:hover {
+  background-color: #06a237;
+}
+
+body {
+  margin: 0;
+  background-color: #fff8f2;
+}
+
+/* first -section */
+.hero-bg {
+  background-color: #00c875;
+  height: 144px;
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+}
+
+.contact-button {
+  background: #ffffff;
+  color: #444752;
+}
+
+.scallop {
+  width: 160px;
+  height: 160px;
+  background-color: #00c875;
+  border-radius: 0 0 160px 160px;
+  flex-shrink: 0;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+  margin-top: 18%;
+}
+
+main img {
+  width: 570px;
+}
+
+.first-section {
+  h1 {
+    margin: 16px 0 16px;
+  }
+
+  h4 b {
+    margin: 16px 0 16px;
+    color: #444752;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  b {
+    margin: 16px 0 16px;
+  }
+  h4 {
+    color: #444752;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 19.5px */
+    margin: 16px 0 16px;
+  }
+
+  h6 {
+    margin: 16px 0 16px;
+  }
+}
+/* ========== Button ========== */
+.contact-button:active {
+  background-color: #adadad; /* 눌렀을 때 색 */
+}
+
+.contact-button:hover {
+  background-color: #adadad; /* 눌렀을 때 색 */
+}
+section {
+  margin: 0 138px;
+}
+.first-section {
+  display: flex;
+  flex-wrap: wrap; /* ✅ 모바일 대응 */
+  align-items: stretch; /* ✅ 높이 동일하게 */
+  max-width: 1440px;
+  margin: 200px auto 120px;
+  padding: 0 138px;
+}
+
+.first-section-1,
+.first-section-2 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.first-section-2 img {
+  width: 100%;
+  height: 100%;
+  max-width: 528px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-left: 32px;
+}
+
+.first-section h1 {
+  margin-top: 0;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 16px 0 16px;
+}
+
+.tag-row span {
+  border-radius: 20px;
+  border: 1px solid #00c875;
+  padding: 7px 12px;
+  color: #444752;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.tag-row span:hover {
+  background-color: #00c875; /* ✅ hover 시 배경색 */
+  color: white; /* ✅ 텍스트 색상 반전 (가독성 좋게) */
+  cursor: default; /* optional: pointer 대신 default */
+}

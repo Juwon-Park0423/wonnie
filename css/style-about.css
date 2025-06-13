@@ -1,0 +1,654 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff8f2;
+}
+
+/* ========== Layout ========== */
+.hero-bg {
+  background-color: #cec4fa;
+  height: 144px;
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+}
+
+.scallop {
+  background-color: #cec4fa;
+}
+
+.contact-button {
+  background: #ff96af;
+  color: #444752;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+  margin-top: 18%;
+}
+
+main img {
+  width: 570px;
+}
+/* ========== Button ========== */
+.contact-button:active {
+  background-color: #e36f8d; /* 눌렀을 때 색 */
+}
+
+.contact-button:hover {
+  background-color: #ffa4bb; /* 살짝 더 진한 핑크 */
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  background-color: #ff96af;
+  padding: 30px 0;
+  max-width: 1200px;
+  margin: 200px auto 80px;
+  border-radius: 20px;
+}
+
+.intro .rounded-dash {
+  height: 5px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #fff8f2,
+    #fff8f2 20px,
+    transparent 20px,
+    transparent 36px
+  );
+  border-radius: 100px;
+  width: 100%;
+  display: none;
+}
+
+.intro h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sticker1 {
+  position: absolute;
+  width: 100px; /* 필요에 따라 조절 */
+  height: auto;
+}
+
+.sticker2 {
+  position: absolute;
+  width: 70px; /* 필요에 따라 조절 */
+  height: auto;
+}
+@keyframes spin-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-counter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.spin-right {
+  animation: spin-clockwise 4s linear infinite;
+}
+
+.spin-left {
+  animation: spin-counter 6s linear infinite;
+}
+
+/* 위치 지정 */
+.top-left {
+  top: 10px;
+  left: 400px;
+}
+
+.bottom-right {
+  bottom: -10px;
+  right: -30px;
+}
+
+.introduction {
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  flex-wrap: wrap;
+  padding: 0;
+  height: 500px;
+}
+
+.inner-dash {
+  position: relative;
+  margin: -30px 20px 0px 20px;
+  border-radius: 10px;
+}
+
+.inner-dash-h2 {
+  padding-top: 30px;
+}
+
+.inner-dash::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  pointer-events: none;
+
+  background: repeating-linear-gradient(
+        to right,
+        #fff8f2,
+        #fff8f2 20px,
+        transparent 20px,
+        transparent 36px
+      )
+      top,
+    repeating-linear-gradient(
+        to right,
+        #fff8f2,
+        #fff8f2 20px,
+        transparent 20px,
+        transparent 36px
+      )
+      bottom,
+    repeating-linear-gradient(
+        to bottom,
+        #fff8f2,
+        #fff8f2 20px,
+        transparent 20px,
+        transparent 36px
+      )
+      left,
+    repeating-linear-gradient(
+        to bottom,
+        #fff8f2,
+        #fff8f2 20px,
+        transparent 20px,
+        transparent 36px
+      )
+      right;
+
+  background-repeat: no-repeat;
+  background-size: 100% 5px, 100% 5px, 5px 100%, 5px 100%;
+  background-position: top left, bottom left, top left, top right;
+}
+
+#scrollToTop:hover {
+  background-color: #b3a9e6;
+}
+
+#scrollToTop {
+  background-color: #cec4fa;
+}
+@media (max-width: 1440px) {
+  .intro {
+    text-align: center;
+    background-color: #ff96af;
+    padding: 30px 0;
+    margin: 200px auto 80px;
+    border-radius: 0;
+    max-width: 1440px;
+  }
+
+  .introduction {
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .intro .rounded-dash {
+    height: 5px;
+    background-image: repeating-linear-gradient(
+      to right,
+      #fff8f2,
+      #fff8f2 20px,
+      transparent 20px,
+      transparent 36px
+    );
+    border-radius: 100px;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .inner-dash {
+    border: 0px dashed #fff8f2;
+    border-radius: 10px;
+    margin: -10px 20px;
+    background-color: #ff96af; /* 배경색 유지 */
+  }
+
+  .inner-dash::before {
+    display: none;
+  }
+
+  .inner-dash-h2 {
+    padding-top: 0px;
+  }
+}
+.introduction img {
+  max-width: 400px;
+  height: auto;
+  transform: rotate(5deg);
+  flex-shrink: 0;
+  margin-top: -40px;
+}
+
+.intro-card {
+  text-align: left;
+  background-color: #fff8f2;
+  background-image: url(../img/note.png);
+  background-size: 190%;
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 475px;
+  height: auto;
+  transform: rotate(5.095deg);
+  flex-shrink: 0;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.intro-card-text h6 {
+  color: #444752;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+.intro-card-text h6 b {
+  color: #7b7ff6;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.hashtags {
+  margin-top: 20px;
+  color: #444752;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Skills Section */
+.skills-section {
+  margin: 80px auto;
+  background-color: #fff8f2;
+  text-align: center;
+}
+
+.skills-section h2 {
+  padding-top: 40px;
+  margin-top: 0px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  width: 300px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.skill-card h3 {
+  margin-top: 0;
+}
+
+.skill-card ul {
+  padding-left: 20px;
+}
+
+.skill-card-hard-skills,
+.skill-card-tools {
+  width: 300px;
+  height: 370px;
+  background-image: url(../img/myskill-background2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.skill-card-soft-skills {
+  width: 300px;
+  height: 370px;
+  background-image: url(../img/myskillbackground1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.skill-card-hard-skills li,
+.skill-card-tools li,
+.skill-card-soft-skills li {
+  color: #444752;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 250%; /* 32.5px */
+  text-align: left;
+}
+
+.skill-card-hard-skills h3,
+.skill-card-tools h3,
+.skill-card-soft-skills h3 {
+  color: #444752;
+  font-family: Formiga;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  text-align: center;
+  margin-top: 10px;
+}
+
+.skill-card-soft-skills:hover {
+  transform: scale(1.03) rotate(-5deg);
+  transition: all 0.3s ease;
+}
+
+.skill-card-hard-skills:hover {
+  transform: scale(1.03) rotate(-3deg);
+  transition: all 0.3s ease;
+}
+
+.skill-card-tools:hover {
+  transform: scale(1.03) rotate(5deg);
+  transition: all 0.3s ease;
+}
+/* Values Section */
+.values-section {
+  margin: 80px auto;
+  background-image: url(../img/note.png);
+  background-size: 90%;
+  text-align: center;
+  padding-bottom: 30px;
+  max-width: 1200px;
+  border-radius: 20px;
+}
+
+.values-section h2 {
+  padding-top: 40px;
+}
+
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 48px auto 0 auto;
+}
+
+.value-card {
+  border-radius: 20px;
+  padding: 24px;
+  width: 300px;
+  text-align: center;
+  transition: all 0.4s ease;
+  backdrop-filter: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.value-card:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* 살짝 흰빛 */
+  backdrop-filter: blur(12px); /* 블러 효과 핵심 */
+  -webkit-backdrop-filter: blur(12px); /* Safari 지원 */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* 입체감 */
+  background-color: #fff;
+}
+
+.value-icon {
+  margin-bottom: 12px;
+}
+
+.value-icon img {
+  max-width: 130px;
+}
+
+.value-card p {
+  color: #444752;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 22.5px */
+}
+
+.value-card ul {
+  list-style-type: disc;
+  color: #444752;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  text-align: left;
+}
+
+@media (max-width: 1440px) {
+  .values-section {
+    max-width: 1440px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-grid,
+  .values-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .intro-card,
+  .skill-card,
+  .value-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Intro Section */
+
+  .inner-dash::before {
+    display: none;
+  }
+
+  .inner-dash {
+    margin: 0 16px;
+    border-radius: 10px;
+    position: relative;
+    z-index: -1; /* 다른 요소보다 아래에 깔림 */
+  }
+
+  .intro {
+    margin: 60px auto 40px;
+    border-radius: 0;
+    position: relative;
+    z-index: -2;
+  }
+
+  .intro .rounded-dash {
+    display: none;
+  }
+
+  .intro h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .intro h6 {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .intro h6 b {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .introduction {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 16px;
+    height: auto;
+  }
+
+  .introduction img {
+    max-width: 90%;
+    margin: 0 auto;
+    transform: rotate(3deg);
+  }
+
+  .intro-card {
+    max-width: 100%;
+    padding: 20px;
+    background-size: cover;
+    margin: 0 auto;
+    transform: rotate(0deg);
+  }
+
+  .sticker1 {
+    width: 70px;
+  }
+
+  .sticker2 {
+    width: 50px;
+  }
+
+  .sticker1 {
+    top: -10px;
+    left: 255px;
+  }
+
+  .sticker2 {
+    bottom: -10px;
+    left: 260px;
+  }
+  .inner-dash {
+    margin: 0 16px;
+  }
+
+  /* Skills Section */
+  .skills-section {
+    margin: 60px 0;
+    padding: 0 16px;
+  }
+
+  .skills-section h2 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .skill-card-soft-skills,
+  .skill-card-hard-skills,
+  .skill-card-tools {
+    width: 280px;
+    height: auto;
+    margin: 0px auto;
+    background-image: none;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    padding: 30px 16px;
+  }
+  .skill-card-soft-skills {
+    background-color: #cec4fa;
+  }
+  .skill-card-hard-skills,
+  .skill-card-tools {
+    background-color: #fff;
+    border-width: 5px;
+    border-color: #b3a9e6;
+    border-style: dotted;
+  }
+  .skills-section h3 {
+    font-size: 20px;
+  }
+
+  .skills-section li {
+    font-size: 14px;
+  }
+
+  /* Values Section */
+  .values-section {
+    margin: 60px 0;
+    padding: 0 16px;
+    background-size: 300%;
+    border-radius: 20px;
+    padding: 0 16px 40px;
+  }
+
+  .values-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수평 중앙 정렬 */
+    margin: 16px auto; /* 상하 16px, 좌우 중앙 정렬 */
+  }
+
+  .value-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .value-icon img {
+    max-width: 100px;
+  }
+
+  .value-card p,
+  .value-card li {
+    font-size: 14px;
+  }
+}

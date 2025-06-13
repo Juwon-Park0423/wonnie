@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="css/style-about.css" />
+    <link rel="stylesheet" href="css/style-nav.css" />
+    <link rel="stylesheet" href="css/typo.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dds1puu.css" />
+    <link rel="icon" href="favicon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="hero-bg">
+      <div class="scallop-row">
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+        <div class="scallop"></div>
+      </div>
+      <header>
+        <a href="index.html"><img src="img/woonieicon.svg" alt="" /></a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="works.html">Work</a>
+        </nav>
+        <button class="contact-button" onclick="location.href='contact.html'">
+          Contact Me!
+        </button>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <!-- Mobile Menu (여기서 버튼도 포함) -->
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close-button" onclick="toggleMenu()">✕</button>
+          <div class="mobile-menu-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="works.html">Work</a>
+            <button
+              class="contact-button"
+              onclick="location.href='contact.html'"
+            >
+              Contact Me!
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="intro">
+      <div class="rounded-dash"></div>
+      <div class="inner-dash">
+        <h2 class="inner-dash-h2">About Me</h2>
+        <div class="introduction">
+          <img src="img/juwon.png" alt="" />
+          <div class="intro-card">
+            <img
+              src="img/sticker1.png"
+              class="sticker1 top-left spin-left"
+              alt=""
+            />
+            <h3>Hi, I'm Wonnie!</h3>
+            <div class="intro-card-text">
+              <h6>
+                I'm Juwon Park, a UI/UX designer based in Auckland. I value
+                honesty and clarity in design, and I enjoy solving problems
+                through thoughtful, user-centered solutions. My goal is to
+                create experiences that feel trustworthy, intuitive, and
+                genuinely useful.
+              </h6>
+              <h6><b>#Korean #Gamer #Drawing #Purple Love</b></h6>
+            </div>
+            <img
+              src="img/sticker2.png"
+              class="sticker2 bottom-right spin-right"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="rounded-dash"></div>
+    </div>
+
+    <section class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card-hard-skills">
+          <h3>Hard Skills</h3>
+          <ul class="skill-list">
+            <li>UI Prototyping</li>
+            <li>UX Research</li>
+            <li>Web Development (HTML / CSS / JS)</li>
+            <li>Digital Illustration</li>
+          </ul>
+        </div>
+        <div class="skill-card-soft-skills">
+          <h3>Soft Skills</h3>
+          <ul class="skill-list">
+            <li>Communication</li>
+            <li>Collaboration</li>
+            <li>Problem Solving</li>
+            <li>Design Thinking</li>
+          </ul>
+        </div>
+        <div class="skill-card-tools">
+          <h3>Tools</h3>
+          <ul class="skill-list">
+            <li>Adobe Suite</li>
+            <li>Figma</li>
+            <li>Visual Studio Code</li>
+            <li>Procreate</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <h2>Core Value</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon think-icon">
+            <img src="img/think.png" alt="" />
+          </div>
+          <h3>Think</h3>
+          <p>Observe. Analyze. Understand.</p>
+          <ul class="value-list">
+            <li>User Research</li>
+            <li>Content Mapping</li>
+            <li>Problem Definition</li>
+            <li>Pattern Recognition</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-icon transparency-icon">
+            <img src="img/transparent.png" alt="" />
+          </div>
+          <h3>Transparency</h3>
+          <p>Be clear. Design with honesty</p>
+          <ul class="value-list">
+            <li>Clear Structure</li>
+            <li>Understandable Flow</li>
+            <li>Purposeful Layout</li>
+            <li>Open Design</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-icon trust-icon">
+            <img src="img/trust.png" alt="" />
+          </div>
+          <h3>Trust</h3>
+          <p>Trust through Thought & Clarity.</p>
+          <ul class="value-list">
+            <li>Usability</li>
+            <li>Predictable Interactions</li>
+            <li>Consistent Experience</li>
+            <li>Reliable Design</li>
+          </ul>
+        </div>
+      </div>
+      <button id="scrollToTop" title="Go to top">↑</button>
+    </section>
+
+    <footer>
+      <div class="contact-section">
+        <h1>Contact Me</h1>
+
+        <div class="contact-main">
+          <div class="contact-info">
+            <div class="footer-item">
+              <img src="img/distance.svg" alt="location" />
+              <span> <p>Auckland, New Zealand</p></span>
+            </div>
+            <div class="footer-item">
+              <img src="img/call.svg" alt="phone" />
+              <span
+                ><a href="tel:+6421203220"><p>+64 021 203 2207</p></a></span
+              >
+            </div>
+            <div class="footer-item">
+              <img src="img/mail.svg" alt="email" />
+              <span
+                ><a href="mailto:joowonpark0423@gmail.com"
+                  ><p>joowonpark0423@gmail.com</p></a
+                ></span
+              >
+            </div>
+          </div>
+
+          <div class="social-media">
+            <a href="https://www.instagram.com/joo_oneee/"
+              ><img src="img/instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://www.facebook.com/profile.php?id=100008294239112"
+              ><img src="img/facebook.svg" alt="facebook"
+            /></a>
+            <a href="https://www.linkedin.com/in/juwon-park-385680276/"
+              ><img src="img/linke.svg" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="copyright">©Juwon Park</div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
